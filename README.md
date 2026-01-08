@@ -271,7 +271,7 @@ Entwickelt im Rahmen der Lernperiode 12 (LP12)
 
 
 
-=======
+
 # Full-Stack Filmstreaming App
 
 ## Projektbeschreibung
@@ -414,4 +414,4 @@ Dieses Dokument beschreibt die geplante Umsetzung Tag für Tag in detaillierten 
 
 ---
 
->>>>>>> dd7d3ed207a02633e0c8b6bed423496da100477b
+
