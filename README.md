@@ -2,19 +2,21 @@
 
 Eine vollständige Full-Stack-Filmstreaming-Anwendung mit Benutzer-Authentifizierung, Filmverwaltung, Videostreaming und KI-basierten Empfehlungen über die OpenAI API.
 
-## 📋 Projektbeschreibung
+## Projektbeschreibung
 
 Dieses Projekt wurde im Rahmen der Lernperiode 12 (LP12) entwickelt. Ziel ist die Umsetzung einer Full-Stack-Filmstreaming-Anwendung mit modernen Technologien und Best Practices. Das Projekt dient dazu, praxisnah den Umgang mit modernen Technologien zu üben und ein vollständiges Websystem zu entwickeln.
 
-## 🛠️ Technologien
+## Technologien
 
 ### Backend
+
 - **Golang** mit **Gin Framework** - Hochperformanter HTTP-Web-Framework
 - **MongoDB** - NoSQL-Datenbank für flexible Datenspeicherung
 - **JWT** - JSON Web Tokens für sichere Authentifizierung
 - **OpenAI API** - KI-basierte Filmempfehlungen und Beschreibungen
 
 ### Frontend
+
 - **React 18** mit **TypeScript** - Moderne UI-Bibliothek mit Typensicherheit
 - **Vite** - Schneller Build-Tool und Development-Server
 - **TailwindCSS** - Utility-first CSS Framework
@@ -22,7 +24,7 @@ Dieses Projekt wurde im Rahmen der Lernperiode 12 (LP12) entwickelt. Ziel ist di
 - **Axios** - HTTP-Client für API-Kommunikation
 - **React Player** - Video-Player-Komponente
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Voraussetzungen
 
@@ -78,7 +80,7 @@ npm run dev
 
 Die Anwendung ist verfügbar unter `http://localhost:5173`
 
-## 📁 Projektstruktur
+## Projektstruktur
 
 ```
 stream4you/
@@ -107,7 +109,7 @@ stream4you/
 └── README.md
 ```
 
-## 🔐 API-Endpunkte
+## API-Endpunkte
 
 ### Authentifizierung
 
@@ -136,36 +138,38 @@ stream4you/
 - `GET /api/recommendations` - KI-Empfehlungen abrufen (geschützt)
 - `POST /api/ai/movies/:id/description` - KI-Beschreibung generieren (Admin)
 
-## 👤 Benutzerrollen
+## Benutzerrollen
 
 ### Standard-Benutzer
+
 - Filme durchsuchen und ansehen
 - Bewertungen und Kommentare abgeben
 - Personalisierte KI-Empfehlungen erhalten
 
 ### Administrator
+
 - Alle Funktionen eines Standard-Benutzers
 - Filme verwalten (CRUD-Operationen)
 - KI-Beschreibungen für Filme generieren
 
-## 🎯 Features
+## Features
 
-### ✅ Implementiert
+### Implementiert
 
-- [x] Benutzer-Registrierung und -Anmeldung
-- [x] JWT-basierte Authentifizierung
-- [x] Filmkatalog mit Suche und Filterung
-- [x] Film-Detailseiten
-- [x] Bewertungen und Kommentare
-- [x] Video-Streaming
-- [x] Admin-Panel für Filmverwaltung
-- [x] KI-basierte Filmempfehlungen (OpenAI)
-- [x] Automatische Beschreibungsgenerierung (OpenAI)
-- [x] Responsive Design mit TailwindCSS
-- [x] Pagination für Filmübersicht
-- [x] Genre-Filterung
+- Benutzer-Registrierung und -Anmeldung
+- JWT-basierte Authentifizierung
+- Filmkatalog mit Suche und Filterung
+- Film-Detailseiten
+- Bewertungen und Kommentare
+- Video-Streaming
+- Admin-Panel für Filmverwaltung
+- KI-basierte Filmempfehlungen (OpenAI)
+- Automatische Beschreibungsgenerierung (OpenAI)
+- Responsive Design mit TailwindCSS
+- Pagination für Filmübersicht
+- Genre-Filterung
 
-## 🔒 Sicherheit
+## Sicherheit
 
 - Passwörter werden mit bcrypt gehasht
 - JWT-Tokens für sichere Authentifizierung
@@ -173,7 +177,7 @@ stream4you/
 - Admin-Middleware für administrative Funktionen
 - CORS-Konfiguration für Frontend-Zugriff
 
-## 📝 Entwicklung
+## Entwicklung
 
 ### Backend-Tests ausführen
 
@@ -197,7 +201,7 @@ Für die Produktion sollten folgende Umgebungsvariablen gesetzt werden:
 - `MONGODB_URI` - Produktions-MongoDB-URI
 - `OPENAI_API_KEY` - OpenAI API Key (falls verwendet)
 
-## 🚢 Deployment
+## Deployment
 
 ### Optionen
 
@@ -219,19 +223,68 @@ RUN go build -o main .
 CMD ["./main"]
 ```
 
-## 📚 7-Wochen-Plan
+## Projekt-Roadmap
 
-| Woche | Ziel | Status |
-|-------|------|--------|
-| 1 | Projektgrundlage & Setup | ✅ |
-| 2 | Authentifizierung | ✅ |
-| 3 | Filmverwaltung (Admin) | ✅ |
-| 4 | Filmkatalog | ✅ |
-| 5 | Streaming-Funktion | ✅ |
-| 6 | OpenAI-Integration | ✅ |
-| 7 | Testing, Feinschliff & Deployment | ✅ |
+### Woche 1 - Projektgrundlage & Setup
 
-## 🐛 Bekannte Probleme & Verbesserungen
+- Projektstruktur aufsetzen
+- Golang-Server einrichten
+- MongoDB anbinden
+- React-Setup
+
+### Woche 2 - Authentifizierung
+
+- User-Model und Auth-Routes
+- JWT-Auth-System
+- Login/Register im Frontend
+- API-Tests
+
+### Woche 3 - Filmverwaltung (Admin)
+
+- CRUD-Endpunkte für Filme
+- Validierung in MongoDB
+- Admin-UI
+- File-Upload
+
+### Woche 4 - Filmkatalog
+
+- Filmübersicht
+- Detailseite
+- Pagination & Suche
+- React-Router
+
+### Woche 5 - Streaming-Funktion
+
+- Video-Player
+- Streaming-Route
+- Auth-Middleware
+- Styling
+
+### Woche 6 - OpenAI-Integration
+
+- OpenAI API anbinden
+- Automatische Beschreibungen generieren
+- KI-Empfehlungen
+- Anzeige im Frontend
+
+### Woche 7 - Testing, Feinschliff & Deployment
+
+- Unit-Tests
+- UI-Optimierung
+- Deployment vorbereiten
+- Dokumentation abschliessen
+
+## Epics (User Stories)
+
+1. Als Benutzer möchte ich mich registrieren und anmelden können, damit ich personalisierte Inhalte sehe.
+2. Als Benutzer möchte ich Filme durchsuchen und Details ansehen, damit ich passende Filme finde.
+3. Als Benutzer möchte ich Filme abspielen können, damit ich sie direkt auf der Plattform ansehen kann.
+4. Als Administrator möchte ich Filme verwalten, damit ich das Angebot aktuell halten kann.
+5. Als Benutzer möchte ich Empfehlungen basierend auf meinem Geschmack sehen, damit ich neue Filme entdecke.
+6. Als Benutzer möchte ich Bewertungen und Kommentare abgeben, damit ich meine Meinung teilen kann.
+7. Als Entwickler möchte ich die App sicher, performant und ansprechend gestalten, damit sie professionell wirkt.
+
+## Bekannte Probleme & Verbesserungen
 
 ### Aktuelle Einschränkungen
 
@@ -241,177 +294,26 @@ CMD ["./main"]
 
 ### Mögliche Erweiterungen
 
-- [ ] File-Upload für Videos und Poster
-- [ ] Benutzerprofile mit Watchlist
-- [ ] Social Features (Freunde, geteilte Listen)
-- [ ] Erweiterte Suchfilter
-- [ ] Mobile App (React Native)
-- [ ] Unit-Tests und Integration-Tests
-- [ ] CI/CD Pipeline
-- [ ] Monitoring und Logging
+- File-Upload für Videos und Poster
+- Benutzerprofile mit Watchlist
+- Social Features (Freunde, geteilte Listen)
+- Erweiterte Suchfilter
+- Mobile App (React Native)
+- Unit-Tests und Integration-Tests
+- CI/CD Pipeline
+- Monitoring und Logging
 
-## 📄 Lizenz
+## Lizenz
 
 Dieses Projekt wurde für Lernzwecke entwickelt.
 
-## 👨‍💻 Autor
+## Autor
 
 Entwickelt im Rahmen der Lernperiode 12 (LP12)
 
-## 🙏 Danksagungen
+## Danksagungen
 
 - Gin Framework Community
 - React Team
 - MongoDB
 - OpenAI
-
----
-
-**Viel Erfolg mit Stream4You! 🎬**
-
-
-
-
-# Full-Stack Filmstreaming App
-
-## Projektbeschreibung
-Dieses Projekt wurde im Rahmen der Lernperiode 12 (LP12) entwickelt. Ziel ist die Umsetzung einer Full-Stack-Filmstreaming-Anwendung mit Benutzer-Authentifizierung, Filmverwaltung, Videostreaming und einer KI-basierten Empfehlung über die OpenAI API.  
-Das Projekt dient dazu, praxisnah den Umgang mit modernen Technologien zu üben und ein vollständiges Websystem zu entwickeln.
-
----
-
-## Technologien
-- Backend: Golang (Gin oder Fiber)
-- Frontend: React mit TypeScript
-- Datenbank: MongoDB
-- KI-Integration: OpenAI API
-- Styling: TailwindCSS
-- Optional: Deployment via Render, Railway, Vercel oder Docker
-
----
-
-## Ziele der Lernperiode
-- Entwicklung einer vollständigen Full-Stack-Applikation
-- Anwendung moderner Entwicklungspraktiken (API-Design, Datenbankanbindung, Authentifizierung)
-- Nutzung von KI-Technologien über die OpenAI API
-- Selbstständiges Einarbeiten in neue Frameworks und Tools
-
----
-
-## Epics (User Stories)
-1. Als Benutzer möchte ich mich registrieren und anmelden können, damit ich personalisierte Inhalte sehe.  
-2. Als Benutzer möchte ich Filme durchsuchen und Details ansehen, damit ich passende Filme finde.  
-3. Als Benutzer möchte ich Filme abspielen können, damit ich sie direkt auf der Plattform ansehen kann.  
-4. Als Administrator möchte ich Filme verwalten, damit ich das Angebot aktuell halten kann.  
-5. Als Benutzer möchte ich Empfehlungen basierend auf meinem Geschmack sehen, damit ich neue Filme entdecke.  
-6. Als Benutzer möchte ich Bewertungen und Kommentare abgeben, damit ich meine Meinung teilen kann.  
-7. Als Entwickler möchte ich die App sicher, performant und ansprechend gestalten, damit sie professionell wirkt.
-
----
-
-## 7-Wochen-Plan
-
-| Woche | Ziel | Arbeitspakete |
-|-------|------|----------------|
-| **1** | Projektgrundlage & Setup | 1. Projektstruktur aufsetzen <br> 2. Golang-Server einrichten <br> 3. MongoDB anbinden <br> 4. React-Setup |
-| **2** | Authentifizierung | 1. User-Model und Auth-Routes <br> 2. JWT-Auth-System <br> 3. Login/Register im Frontend <br> 4. API-Tests |
-| **3** | Filmverwaltung (Admin) | 1. CRUD-Endpunkte für Filme <br> 2. Validierung in MongoDB <br> 3. Admin-UI <br> 4. File-Upload |
-| **4** | Filmkatalog | 1. Filmübersicht <br> 2. Detailseite <br> 3. Pagination & Suche <br> 4. React-Router |
-| **5** | Streaming-Funktion | 1. Video-Player <br> 2. Streaming-Route <br> 3. Auth-Middleware <br> 4. Styling |
-| **6** | OpenAI-Integration | 1. OpenAI API anbinden <br> 2. Automatische Beschreibungen generieren <br> 3. KI-Empfehlungen <br> 4. Anzeige im Frontend |
-| **7** | Testing, Feinschliff & Deployment | 1. Unit-Tests <br> 2. UI-Optimierung <br> 3. Deployment vorbereiten <br> 4. Dokumentation abschliessen |
-
----
-
-# Projekt-Roadmap
-
-Dieses Dokument beschreibt die geplante Umsetzung Tag für Tag in detaillierten Arbeitspaketen.
-
-## Tag 1 – Projektgrundlage & Setup
-
-### 1. Repository & Grundstruktur
-- GitHub-Repository erstellen (Entscheidung: Monorepo oder getrennte Repos für Backend/Frontend)
-- Ordnerstruktur festlegen:
-
-- README-Grundgerüst anlegen (Projektziel, Tech-Stack, Setup-Anleitung)
-
-### 2. Backend-Setup (Golang)
-- Go-Modul initialisieren (`go mod init github.com/deinname/projektname`)
-- Web-Framework auswählen und begründen (Gin vs. Fiber → Entscheidung dokumentieren)
-- Projektstruktur anlegen:
-- Basisserver implementieren:
-- GET `/health` Endpoint
-- Server startklar mit konfigurierbarem Port und .env-Unterstützung
-
-### 3. MongoDB Integration
-- MongoDB lokal oder MongoDB Atlas einrichten
-- `.env`-Datei mit Connection-String anlegen
-- Go MongoDB Driver einbinden und Client initialisieren
-- Verbindung testen + grundlegendes Fehlerhandling
-- Ordner `/internal/database` anlegen
-
-### 4. Frontend-Setup (React + TypeScript)
-- Projekt mit Vite erstellen (`npm create vite@latest frontend -- --template react-ts`)
-- Tailwind CSS installieren und konfigurieren
-- `tailwind.config.js`
-- Globale Styles (`index.css` mit `@tailwind` Direktiven)
-- Ordnerstruktur definieren:
-
-### 5. Basis-Dokumentation
-- Setup-Anleitung für Backend und Frontend im README ergänzen
-- Architektur-Entscheidungen und verwendete Technologien dokumentieren
-
----
-
-## Tag 2 – Authentifizierung (Backend + Frontend)
-
-### 1. User-Model (Backend)
-- MongoDB Collection `users` anlegen
-- Felder:
-- `_id` (ObjectId)
-- `email` (unique, lowercase)
-- `passwordHash`
-- `createdAt`
-- Validierungsregeln (z. B. E-Mail-Format, Passwortstärke)
-
-### 2. Auth-Routes (Backend)
-- POST `/auth/register`
-- POST `/auth/login`
-- Request-Validierung (z. B. mit `validator` oder manuell)
-- Passwort-Hashing mit bcrypt
-- Fehlerfälle behandeln (E-Mail bereits vergeben, falsches Passwort, etc.)
-
-### 3. JWT-Authentifizierung
-- JWT Secret in `.env` speichern
-- Sign- und Verify-Funktionen implementieren
-- Auth-Middleware erstellen:
-- Token aus `Authorization: Bearer <token>` Header extrahieren
-- Token verifizieren
-- User-ID in `c.Request.Context()` ablegen
-- Hilfsfunktionen für Token-Generierung und Refresh (optional später)
-
-### 4. Frontend: Login & Register UI
-- Pages anlegen:
-- `/login`
-- `/register`
-- Formulare mit Client-seitiger Validierung (z. B. React Hook Form + Zod)
-- Globales API-Setup:
-- Axios Instance oder Fetch-Wrapper mit Base-URL und Interceptors
-- Nach erfolgreichem Login:
-- JWT im `localStorage` oder `HttpOnly Cookie` (später) speichern
-- Globalen User-State anlegen (React Context oder Zustand)
-
-### 5. API-Tests
-- Postman/Newman Collection anlegen
-- Tests für:
-- Erfolgreiches Register + Login
-- Doppelte Registrierung
-- Falsche Logindaten
-- Geschützte Route mit/ohne gültigem Token
-- Fehlerszenarien systematisch durchspielen
-
----
-
----
-
-
